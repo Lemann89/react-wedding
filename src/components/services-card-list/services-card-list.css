@@ -1,0 +1,9 @@
+.services__card-list {
+    margin-top: 24px;
+    list-style: none;
+    padding: 0;
+}
+
+.services__card-item {
+    margin-top: 10px
+}

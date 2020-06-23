@@ -1,0 +1,84 @@
+@font-face {
+	font-family: "wedding";
+	src: url('../../assets/iconfonts/wedding.eot');
+	src: url('../../assets/iconfonts/wedding.eot?#iefix') format('eot'),
+		url('../../assets/iconfonts/wedding.woff2') format('woff2'),
+		url('../../assets/iconfonts/wedding.woff') format('woff'),
+		url('../../assets/iconfonts/wedding.ttf') format('truetype'),
+		url('../../assets/iconfonts/wedding.svg#wedding') format('svg');
+}
+
+.icon:before {
+	font-family: "wedding";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+.icon-body::before {
+	content: "\ea01";
+  }
+  
+  .icon-card::before {
+	content: "\ea02";
+  }
+  
+  .icon-cup::before {
+	content: "\ea03";
+  }
+  
+  .icon-door::before {
+	content: "\ea04";
+  }
+  
+  .icon-friends::before {
+	content: "\ea05";
+  }
+  
+  .icon-group::before {
+	content: "\ea06";
+  }
+  
+  .icon-smile::before {
+	content: "\ea07";
+  }
+  
+  .icon-star::before {
+	content: "\ea08";
+  }
+
+  
+.offer__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: -webkit-calc(25% - 30px);
+    width: calc(25% - 30px);
+    margin-top: 51px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center
+}
+
+.offer__item-subtitle {
+    max-width: 180px;
+    margin-top: 14px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal
+}

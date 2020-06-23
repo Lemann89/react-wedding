@@ -1,0 +1,69 @@
+
+.coaches__card {
+    width: 48%;
+    border: 1px solid rgba(0, 0, 0, .04);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 4px 30px rgba(207, 207, 207, .25);
+    box-shadow: 0 4px 30px rgba(207, 207, 207, .25);
+    border-radius: 2px;
+    margin: 0 8px;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important
+}
+
+.coaches__card-content {
+    padding: 43px 0;
+    margin-left: 24px
+}
+
+.coaches__card-number {
+    font-weight: 700;
+    font-size: 16px
+}
+
+.coaches__card-title {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 24px
+}
+
+.coaches__card-subtitle {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px
+}
+ul {
+    padding: 0;
+}
+.coaches__card-list {
+    list-style: none;
+    margin-top: 24px
+}
+
+.coaches__card-item {
+    margin-bottom: 16px
+}
+
+.coaches__card-exp {
+    opacity: .5
+}
+
+.coaches__card-btn {
+    margin-top: 88px;
+    height: 46px;
+    width: 161px;
+    color: #ff699f;
+    background-color: transparent;
+    border: 2px solid #ff699f;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .5px
+}
+
+.coaches__card-img img {
+    width: 100%
+}

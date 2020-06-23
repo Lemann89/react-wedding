@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+.nav-container {
+    height: 72px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.logo {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px
+}
+
+.lock {
+    overflow: hidden
+}
+
+.icon {
+    font-size: 70px;
+    color: #ff699f
+}
+
+
+.start-btn--nav {
+    margin-left: 24px
+}
+
+@media only screen and (min-width:769px) {
+    .start-btn--nav {
+        display: none
+    }
+}
+
+.start-btn--coach {
+    margin-top: 50%
+}
+
+.start-btn:hover {
+    background-color: #ff699f;
+    color: #fff;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s
+}
+
+.burger {
+    height: 15px;
+    width: 32px
+}
+
+.burger-menu,
+.burger-menu::after,
+.burger-menu::before {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    content: "";
+    height: 2px;
+    width: 32px;
+    border-radius: 4px;
+    background-color: #000;
+    position: relative;
+    z-index: 2;
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px)
+}
+
+.burger-menu::after {
+    position: absolute;
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px)
+}
+
+.burger-menu::before {
+    position: absolute;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px)
+}
+
+.burger-menu-active {
+    background-color: transparent
+}
+
+.burger-menu-active:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0
+}
+
+.burger-menu-active:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 0
+}
+
+@media only screen and (min-width:769px) {
+    .burger {
+        display: none
+    }
+}
+
+.nav {
+    position: relative;
+    z-index: 1
+}
+
+.nav__menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.nav__menu__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.nav__menu__list-item {
+    font-family: Roboto, sans-serif;
+    margin-left: 24px;
+    list-style: none;
+}
+
+.nav__menu__list-item>a {
+    position: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000
+}
+
+.nav__menu__list-item>a:after {
+    display: block;
+    content: "";
+    margin-top: 3px;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    -webkit-transition: width .3s ease-out;
+    -o-transition: width .3s ease-out;
+    transition: width .3s ease-out
+}
+
+.nav__menu__list a:focus:after,
+.nav__menu__list-item>a:hover:after {
+    width: 100%
+}
+
+.nav__menu-heading {
+    margin: 24px 0 48px 24px;
+    font-weight: 700;
+    font-size: 36px
+}
+
+@media only screen and (min-width:769px) {
+    .nav__menu-heading {
+        display: none
+    }
+}
+
+.nav__menu-button {
+    margin-left: 24px;
+    height: 36px;
+    width: 116px;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .5px
+}
+
+.nav__menu-button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s
+    
+}
+
+.nav__menu-mobile-button {
+    margin-left: 24px;
+    height: 46px;
+    width: 161px;
+    color: #ff699f;
+    background-color: transparent;
+    border: 2px solid #ff699f;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .5px
+}
+
+@media only screen and (min-width:769px) {
+    .nav__menu-mobile-button {
+        display: none
+    }
+}
+
+@media only screen and (min-width:769px) {
+    .nav__menu-line {
+        display: none
+    }
+}

@@ -1,0 +1,31 @@
+
+.services__card {
+    min-width: 0;
+    border: 1px solid rgba(0, 0, 0, .04);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 4px 30px rgba(207, 207, 207, .25);
+    box-shadow: 0 4px 30px rgba(207, 207, 207, .25);
+    border-radius: 2px
+}
+
+.services__card-content {
+    padding: 20px 16px 60px
+}
+
+.services__card-title {
+    font-weight: 700;
+    font-size: 24px
+}
+
+.services__card-list {
+    margin-top: 24px
+}
+
+.services__card-item {
+    margin-top: 10px
+}
+
+.services__card-img {
+    width: 100%
+}

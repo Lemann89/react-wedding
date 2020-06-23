@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap);
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+.container {
+    font-family: Montserrat, sans-serif;
+    max-width: 1440px;
+    padding: 0 72px 0 72px;
+    margin: 0 auto
+}
+
+.start-btn {
+    margin-top: 40px;
+    height: 46px;
+    width: 161px;
+    color: #ff699f;
+    background-color: transparent;
+    border: 2px solid #ff699f;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .5px
+}
