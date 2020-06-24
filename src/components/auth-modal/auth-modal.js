@@ -27,8 +27,16 @@ const AuthModal = () => {
 
     const submitForm = () => {
         http.authorization({email, password})
-            .then(data => token.setToken(data));
-        handleClose();
+        .then(res => {
+            const token = new TokenService();
+            if(res.access_token){
+                token.setToken(res);
+                window.location.reload();
+            }
+            if(res.status === 400){
+                alert('Email or password wrong')
+            }
+        }).catch(() => alert('Email or password wrong'))
     }
 
     return (

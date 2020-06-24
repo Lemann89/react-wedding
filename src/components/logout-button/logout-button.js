@@ -7,7 +7,8 @@ const LogoutButton = () => {
     const token = new TokenService();
 
     const logout = () => {
-        token.removeToken()
+        token.removeToken();
+        window.location.reload();
     }
 
     return (

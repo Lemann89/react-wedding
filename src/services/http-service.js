@@ -11,6 +11,11 @@ export default class HttpService {
         .then(data => data.content.filter(sections => sections.type === type)[0]);
     }
 
+    getAllSections(){
+      return fetch(`${this.baseURL}/section`)
+      .then(res => res.json())
+    }
+
     authorization(loginObject) {
       return fetch(`${this.baseURL}/user/login`, {
         method: 'POST',

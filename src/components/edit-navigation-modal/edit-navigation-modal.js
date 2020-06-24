@@ -33,7 +33,7 @@ const EditNavigationModal = () => {
   const submitForm = () => {
     const http = new HttpService();
     http.updateSection(form);
-    
+    window.location.reload();
   };
 
   return (
